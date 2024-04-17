@@ -1,0 +1,115 @@
+ALGORITHM project
+VAR
+    sentence : STRING ;
+    num : INTEGER := 0 ;
+    esp : INTEGER := 0 ;
+    i,j,k : INTEGER :=0 ;
+    vow : INTEGER := 0 ;
+    
+BEGIN
+    WHILE (sentence[i]  not ".") DO
+        num := num + 1 ;
+        i := i +1 ;
+        IF (sentence[i] = ".") THEN
+            num := num + 1 ;
+        END_IF
+    END_WHILE
+    write(num) ;
+
+
+    WHILE (sentence[j] = " ") DO
+        esp := esp + 1 ;
+        j := j + 1  ;
+    END_WHILE
+    write(esp + 1);
+    FOR k FROM 0 TO num STEP 1  DO
+        IF (sentence[k] = "a" or sentence[k] = "e" or sentence[k] = "i" or sentence[k] = "o" or sentence[k] = "u") THEN
+            vow := vow + 1 ;
+        END_IF
+    END_FOR
+    write(vow) ;
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ALGORITHM compar
+// VAR
+//     num1 : FLOAT ;
+//     num2 : FLOAT ;
+//     p : FLOAT := 3.14 ;
+//     r : FLOAT ;
+//     c : FLOAT := 0 ;
+//     i : INTEGER := 0 ;
+//     tab  : ARRAY_OF FLOAT[3];
+//     max : FLOAT := 0 ;
+// BEGIN
+//     read (num1);
+//     read (num2);
+//     IF (num1<num2) THEN
+//         print (num2) ;
+//     ELSE
+//         print (num1) ;
+//     END_IF
+//     read (r) ;
+//     print p*r*r ;
+
+//     REPEAT
+//         read(num1 , num2);
+//         c := c + num1+ num2 ;
+
+//     UNTIL (c >= 20) ;
+//     write (c) ;
+
+//     red (tab);
+//     FOR i FROM 0 TO 2 STEP 1  DO
+//         IF (max < tab[i]) THEN
+//             max = tab[i] ;
+//             write(max) ;
+        
+            
+//         END_IF
+//     END_FOR
+
+
+
+// END
+
+ALGORITHM project
+VAR
+    sentence : STRING ;
+    num : INTEGER := 0 ;
+    esp : INTEGER := 0 ;
+    i,j,k : INTEGER :=0 ;
+    vow : INTEGER := 0 ;
+    
+BEGIN
+    WHILE (sentence[i]  not ".") DO
+        num := num + 1 ;
+        i := i +1 ;
+    END_WHILE
+    write(num) ;
+
+
+    WHILE (sentence[j] = " ") DO
+        esp := esp + 1 ;
+        j := j + 1  ;
+    END_WHILE
+    write(esp + 1);
+    FOR k FROM 0 TO num STEP 1  DO
+        IF (sentence[k] = "a" or sentence[k] = "e" or sentence[k] = "i" or sentence[k] = "o" or sentence[k] = "u") THEN
+            vow := vow + 1 ;
+        END_IF
+    END_FOR
+    write(vow) ;
+END
+
